@@ -1,0 +1,38 @@
+.header {
+  position: relative;
+}
+img {
+  position: absolute;
+  top: 200px;
+  height: 200px;
+  left: 30vw;
+}
+p {
+  position: absolute;
+  color: white;
+  width: 40vw;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  left: 30vw;
+  top: 400px;
+  font-size: 18px;
+}
+a {
+  position: absolute;
+  top: 550px;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  background-color: maroon;
+  padding: 10px 20px;
+  left: 45vw;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+a:hover {
+  transform: scale(1.25);
+  background-color: white;
+  color: maroon;
+  font-weight: 500;
+}

@@ -1,0 +1,59 @@
+.hide {
+  display: none;
+}
+.map-container {
+  text-align: center;
+}
+.map-container {
+  margin-top: 80px;
+}
+.centered-y {
+  background-color: black;
+  padding: 5px 10px;
+  border: none;
+  color: white;
+}
+.profile {
+  padding: 2em 2em;
+  background-color: beige;
+  width: 50vw;
+  margin: auto;
+  border-radius: 10px;
+}
+.profile form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+}
+.profile input {
+  margin-top: 15px;
+  border: none;
+  border-bottom: solid 1px grey;
+  font-family: "Raleway", sans-serif;
+
+  background: none;
+}
+.profile input::placeholder {
+  font-size: 14px;
+  background: none;
+  padding: 1em 1em;
+  color: grey;
+}
+.profile span {
+  margin-top: 15px;
+  font-size: 18px;
+  color: black;
+}
+.profile button {
+  background-color: rgba(128, 128, 128, 0.353);
+  color: black;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 5px 15px;
+}
+.glyphicon {
+  margin-right: 10px;
+}

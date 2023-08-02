@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Well Being | Settings</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./settings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css"
+        integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+</head>
+
+<body>
+    <!--  Navigation  -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-ex2-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand"><img src="./assets/WellBeing_Logo1.png" class="logo"></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex2-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><strong>Total Time Spent :</strong> 2 hrs 30 mins</a></li>
+                    <li><a href="#"><strong>This Week : </strong>14 hrs 12 mins</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> John Wick</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-floppy-saved"></span> Save and Update</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container map-container">
+        <div class="inner-basic division-map div-toggle" data-target=".division-details" id="divisiondetail">
+            <button class="map-point-sm" data-show=".darwin">
+                <div class="content">
+                    <div class="centered-y">
+                        <p>Profile</p>
+                    </div>
+                </div>
+            </button>
+            <button class="map-point-sm" data-show=".ptown">
+                <div class="content">
+                    <div class="centered-y">
+                        <p>Alert Settings</p>
+                    </div>
+                </div>
+            </button>
+            <button class="map-point-sm" data-show=".philly">
+                <div class="content">
+                    <div class="centered-y">
+                        <p>Change Password</p>
+                    </div>
+                </div>
+            </button>
+            <button class="map-point-sm" data-show=".dela">
+                <div class="content">
+                    <div class="centered-y">
+                        <p>Desktop Notifications</p>
+                    </div>
+                </div>
+            </button>
+        </div><!-- end inner basic -->
+    </div>
+
+
+    <div class="map-container">
+        <div class="inner-basic division-details">
+            <div class="initialmsg">
+                <p>Choose button above</p>
+            </div>
+            <div class="darwin hide">
+                <div class="profile">
+                    <h1>Change Your Profile Settings</h1>
+                    <form action="">
+                        <span class="glyphicon glyphicon-user">Change Your Name</span>
+                        <input type="text" placeholder="Enter your new name">
+                        <span class="glyphicon glyphicon-text-width">Change Your Username</span>
+
+                        <input type="text" placeholder="Enter your new username">
+                        <span class="glyphicon glyphicon-calendar">Change Your Birthday</span>
+
+                        <input type="date" placeholder="Enter your birthday">
+                        <button><span class="glyphicon glyphicon-floppy-saved"></span>Save Changes</button>
+                    </form>
+                </div>
+            </div>
+            <div class="ptown hide">
+                <h1>Configure Alert Type</h1>
+
+                <div class="alert">
+                    <form>
+                        <div class="one">
+                            <label>Set Alert Time</label>
+                            <input type="number" placeholder="Enter Minutes">
+                        </div>
+                        <div class="one">
+                            <label>Set Alert Type</label>
+                            <div class="radio"><input type="radio" value="Popup Alert">Popup Alert</div>
+                            <div class="radio"><input type="radio" value="Alarm Elert">Alarm Alert</div>
+                        </div>
+                        <button><span class="glyphicon glyphicon-floppy-saved"></span>Save Changes</button>
+
+                    </form>
+                </div>
+            </div>
+            <div class="philly hide">
+                <div class="changepass">
+                    <h1>Change Your Password</h1>
+
+                    <form action="">
+                        <div class="row-one">
+                            <label>Enter Old Password</label>
+                            <input type="text" placeholder="Old Password">
+                        </div>
+                        <div class="row-one">
+                            <label>Enter New Password</label>
+                            <input type="text" placeholder="New Password">
+                        </div>
+                        <div class="row-one">
+                            <label>Enter New Password Again</label>
+                            <input type="text" placeholder="Confirm Password">
+                        </div>
+                        <button><span class="glyphicon glyphicon-floppy-saved"></span>Save Changes</button>
+
+                    </form>
+                </div>
+            </div>
+            <div class="dela hide">
+                <div class="desktop-notifications">
+                    <h1>Configure Desktop Notifications</h1>
+
+                    <form>
+                        <label>Turn On Desktop Notifications</label>
+                        <div class="desktop-one">
+                            <input type="radio" value="On">
+                            <label>On</label>
+                        </div>
+                        <div class="desktop-one">
+                            <input type="radio" value="Off">
+                            <label>Off</label>
+                        </div>
+                        <button><span class="glyphicon glyphicon-floppy-saved"></span>Save Changes</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./hide.js"></script>
+</body>
+
+</html>
